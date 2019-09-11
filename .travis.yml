@@ -1,5 +1,4 @@
-language: java
-  - openjdk8
+language: java - openjdk8
 
 services:
   - docker
