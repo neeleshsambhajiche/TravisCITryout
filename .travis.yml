@@ -2,8 +2,11 @@ language: java - openjdk8
 services:
   - docker
 before_install:
-  - docker pull carlad/sinatra
+  - docker pull neeleshsambhajiche/get-started:part3
+  - docker tag neeleshsambhajiche/get-started:part3 neeleshsambhajiche/get-started:part4
   - docker images
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push neeleshsambhajiche/get-started:part4
 before_deploy:
   - mvn help:evaluate -N -Dexpression=project.version|grep -v '\['
   - export project_version=$(mvn help:evaluate -N -Dexpression=project.version|grep
