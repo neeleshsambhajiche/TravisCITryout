@@ -1,3 +1,9 @@
+services:
+  - docker
+before_install:
+  - docker pull carlad/sinatra
+  - docker images
+
 deploy:
   provider: releases
   api_key:
