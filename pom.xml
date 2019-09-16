@@ -12,6 +12,17 @@
     <url>https://github.com/neeleshsambhajiche/TravisCITryout</url>
     <description>A library to test deployment with Travis CI</description>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
