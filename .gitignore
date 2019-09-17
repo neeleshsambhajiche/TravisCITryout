@@ -1,4 +1,5 @@
 # SBT
+# SBT
 dist/*
 target/
 lib_managed/
