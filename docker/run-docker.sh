@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # First build the docker image from the dockerfile
-sudo docker build -t travis ./docker/.
+sudo docker build -t travis ./
 
 dockerHostname="travis-docker"
 
