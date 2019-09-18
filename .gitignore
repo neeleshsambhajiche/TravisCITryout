@@ -99,3 +99,5 @@ test-output
 
 # Default sigar library extract location.
 native/
+
+docker/Travis*.jar
