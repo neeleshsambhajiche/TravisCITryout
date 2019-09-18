@@ -1,6 +1,9 @@
 services:
   - docker
 before_install:
+#  - mvn clean package
+#  - cd docker
+#  - ./run-docker.sh
   - docker pull neeleshsambhajiche/get-started:part3
   - docker tag neeleshsambhajiche/get-started:part3 neeleshsambhajiche/get-started:part4
   - docker images
