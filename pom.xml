@@ -126,6 +126,31 @@
                             </execution>
                         </executions>
                     </plugin>
+
+                    <plugin>
+                        <groupId>net.alchim31.maven</groupId>
+                        <artifactId>scala-maven-plugin</artifactId>
+                        <version>3.4.4</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>compile</goal>
+                                    <goal>testCompile</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+
+                        <configuration>
+                            <scalaCompatVersion>2.11.12</scalaCompatVersion>
+                            <scalaVersion>2.11.12</scalaVersion>
+                            <args>
+                                <arg>-deprecation</arg>
+                                <arg>-dependencyfile</arg>
+                                <arg>${project.build.directory}/.scala_dependencies</arg>
+                            </args>
+                            <recompileMode>incremental</recompileMode>
+                        </configuration>
+                    </plugin>
                 </plugins>
 
             </build>
