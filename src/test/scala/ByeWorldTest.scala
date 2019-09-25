@@ -1,9 +1,9 @@
 import org.scalatest.FlatSpec
 
 /**
- * @since 16/09/19
+ * @since 18/09/19
  */
-class HelloWorldTest extends FlatSpec {
+class ByeWorldTest extends FlatSpec {
 
     "The BinaryTrainAUROC" should "match" in {
         withClue("BinaryTrainAUROC: ") {
@@ -12,4 +12,5 @@ class HelloWorldTest extends FlatSpec {
             }
         }
     }
+
 }
