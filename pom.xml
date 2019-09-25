@@ -6,7 +6,7 @@
 
     <groupId>com.github.neeleshsambhajiche</groupId>
     <artifactId>TravisCITryout</artifactId>
-    <version>6.0</version>
+    <version>7.0</version>
 
     <name>TravisCiTryout</name>
     <url>https://github.com/neeleshsambhajiche/TravisCITryout</url>
@@ -19,14 +19,12 @@
             <groupId>com.typesafe.slick</groupId>
             <artifactId>slick_2.11</artifactId>
             <version>3.3.0</version>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.typesafe.slick</groupId>
             <artifactId>slick-codegen_2.11</artifactId>
             <version>3.3.0</version>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
