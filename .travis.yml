@@ -3,7 +3,7 @@ services:
   - docker
 ## export GPG details
 before_install:
-  - mvn clean package
+  - mvn clean package -Ptest
   - docker/run-docker.sh
   - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
   - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
