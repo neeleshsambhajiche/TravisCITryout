@@ -1,6 +1,4 @@
 language: java - openjdk8
-services:
-  - docker
 ## export GPG details
 before_install:
 #  - mvn -version
