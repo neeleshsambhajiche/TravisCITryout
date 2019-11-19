@@ -1,4 +1,5 @@
-language: java - openjdk8
+language: java
+jdk: openjdk8
 ## export GPG details
 before_install:
   - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
