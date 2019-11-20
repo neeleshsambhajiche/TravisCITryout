@@ -7,7 +7,7 @@ class ByeWorldTest extends FlatSpec {
 
     "The BinaryTrainAUROC" should "match" in {
         withClue("BinaryTrainAUROC: ") {
-            assertResult(0) {
+            assertResult(1) {
                 1
             }
         }
