@@ -4,7 +4,9 @@ jdk: openjdk8
 before_install:
   - mvn -version
   - mvn clean package -Ptest
-  - docker/run-docker.sh
+  - cd docker
+  - ./run-docker.sh
+  - cd ..
 #  - export GPG_TTY=$(tty)
 #  - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
 #  - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
