@@ -2,9 +2,11 @@ language: java
 jdk: openjdk8
 ## export GPG details
 before_install:
-  - export GPG_TTY=$(tty)
-  - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
-  - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
+  - mvn -version
+  - mvn clean package -Ptest
+#  - export GPG_TTY=$(tty)
+#  - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
+#  - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
 install:
   mvn -s .maven.xml install -DskipTests=true -Dgpg.skip -Dmaven.javadoc.skip=true -B -V
 ## Build and release to maven central
