@@ -7,7 +7,7 @@ before_install:
 #  - ./run-docker.sh
 #  - cd ..
   - gpg --list-keys
-  - echo $GPG_SECRET_KEYS | base64 --decode | gpg2 --import
+  - echo $GPG_SECRET_KEYS | base64 --decode | gpg --import
 #  - export GPG_TTY=$(tty)
 #  - echo $GPG_SECRET_KEYS
 #  - echo $GPG_OWNERTRUST
