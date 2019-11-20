@@ -6,14 +6,9 @@ before_install:
 #  - cd docker
 #  - ./run-docker.sh
 #  - cd ..
-  - gpg --list-keys
   - echo $GPG_SECRET_KEYS | base64 --decode | gpg --import
-#  - export GPG_TTY=$(tty)
-#  - echo $GPG_SECRET_KEYS
-#  - echo $GPG_OWNERTRUST
-#  - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
-#  - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
+  - echo $GPG_OWNERTRUST | base64 --decode | gpg --import-ownertrust
 
 ## Build and release to maven central
 script:
-#  mvn -s .maven.xml clean deploy -DskipTests=true -B -U -Prelease
+  mvn -s .maven.xml clean deploy -DskipTests=true -B -U -Prelease
