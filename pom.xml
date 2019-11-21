@@ -6,7 +6,7 @@
 
     <groupId>com.github.neeleshsambhajiche</groupId>
     <artifactId>TravisCITryout</artifactId>
-    <version>13.0</version>
+    <version>14.0</version>
     <packaging>jar</packaging>
 
     <name>TravisCiTryout</name>
